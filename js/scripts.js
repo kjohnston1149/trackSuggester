@@ -42,13 +42,21 @@ $(document).ready(function() {
 
     if ($("input:radio[name=aspectImport]:checked").val() === "java") {
       cssDesign += 1
-      javaAndroid += 1
+      javaAndroid += 2
     } else {
       rubyRails +=2
       cssDesign += 1
       javaAndroid -=1
     };
-    
+
+    if ($("input:radio[name=timeExtra]:checked").val() === "css") {
+      cssDesign += 1
+    } else if ($("input:radio[name=timeExtra]:checked").val() === "java") {
+      javaAndroid += 2
+    } else {
+      rubyRails += 1
+    };
+
     if (nameInput === "") {
       $(".error").show();
       $("#cssDesign").hide();
