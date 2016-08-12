@@ -2,7 +2,7 @@
 <html>
   <head>
     <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
     <script src ="js/scripts.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -117,6 +117,7 @@
                   No.
                 </label>
               </div>
+          </div>
           <!-- Extra time Question  -->
           <div id="extraTime">
             <label for="radio">If you had extra time on a project, which of the following would you chose to do?</label>
@@ -150,51 +151,70 @@
         </form>
       </div>
       <!-- Results -->
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content" id="cssDesign">
-               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">Close</button>
-                <h2 class="modal-title"><span class="name"></span>, you should take the CSS/Design track!</h2>
-              </div>
-              <div class="modal-body">
-                <img src="img/cssDesignTrack.png" alt="CSS Design course">
-                <h4>CSS course description:</h4>
-                <p>course description goes here</p>
-                <h4>Design course description</h4>
-                <p>course description goes here</p>
-              </div>
-              <div="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
 
-            <div id="javaAndroid">
-              <h2><span class="name"></span>, you should take the Java/Android track!</h2>
-              <img src="img/javaAndroidTrack.png" alt="Java Android course">
-              <h4>Java course description:</h4>
-              <p>course description goes here</p>
-              <h4>Android course description</h4>
-              <p>course description goes here</p>
+              <div class="modal-content" id="cssDesign">
+                <div class="modal-header">
+                  <h2 class="modal-title"><span class="name"></span>, you should take the CSS/Design track!</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/cssDesignTrack.png" alt="CSS Design course">
+                  <h4>CSS course description:</h4>
+                  <p>course description goes here</p>
+                  <h4>Design course description</h4>
+                  <p>course description goes here</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+              <div class="modal-content" id="javaAndroid">
+                <div class="modal-header">
+                  <h2 class="modal-title"><span class="name"></span>, you should take the Java/Android track!</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/javaAndroidTrack.png" alt="Java Android course">
+                  <h4>Java course description:</h4>
+                  <p>course description goes here</p>
+                  <h4>Android course description</h4>
+                  <p>course description goes here</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+              <div class="modal-content" id="rubyRails">
+                <div class="modal-header">
+                  <h2 class="modal-title"><span class="name"></span>, you should take the Java/Android track!</h2>
+                </div>
+                <div class="modal-body">
+                  <img src="img/rubyRailsTrack.png" alt="Ruby Rails course">
+                  <h4>Ruby course description:</h4>
+                  <p>course description goes here</p>
+                  <h4>Rails course description</h4>
+                  <p>course description goes here</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+
+                <div class="modal-content" id="intro">
+                  <div class="modal-header">
+                    <h2 class="modal-title">Hey <span class="name"></span>! You need to take Intro to Program before you can choose any track!</h2>
+                  </div>
+                  <div class="modal-body">
+                    <h4>Be sure to enroll at Epicodus!</h4>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
             </div>
-            <div id="rubyRails">
-              <h2><span class="name"></span>, you should take the Ruby/Rails track!</h2>
-              <img src="img/rubyRailsTrack.png" alt="Ruby Rails course">
-              <h4>Ruby course description:</h4>
-              <p>course description goes here</p>
-              <h4>Rails course description</h4>
-              <p>course description goes here</p>
-            </div>
-            <div id="intro">
-              <h2>Hey <span class="name"></span>! You need to take Intro to Program before you can choose any track!</h2>
         </div>
-        </div>
-      </div>
-
-
-      </div>
     </div>
-  <!-- <script src="js/bootstrap.min.js"></script>   -->
   </body>
 </html>

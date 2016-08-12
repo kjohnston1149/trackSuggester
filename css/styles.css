@@ -2,10 +2,20 @@ h1 {
   font-weight: bold;
 }
 
+img {
+  height: auto;
+  width: 550px;
+}
+
 .error {
   display: none;
   color: red;
 }
+
+.jumbotron {
+  text-align: center;
+}
+
 
 #cssDesign {
   display: none;
