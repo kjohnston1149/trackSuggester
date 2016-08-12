@@ -2,6 +2,15 @@ h1 {
   font-weight: bold;
 }
 
+body {
+  color: white;
+  text-shadow: 1px 1px black;
+  background-image: url(../img/background.jpg);
+  background-size: auto;
+
+
+}
+
 img {
   height: auto;
   width: 555px;
@@ -21,6 +30,8 @@ h2.modal-title {
   font-weight: bold;
 }
 
+
+
 .container{
   margin-bottom: 20px;
 }
@@ -32,9 +43,11 @@ h2.modal-title {
 
 .jumbotron {
   text-align: center;
+  color: white;
+  text-shadow: 3px 3px black;
   background-image: url(../img/roadFork.jpg);
   background-size: auto;
-  text-decoration-color: white;
+
 
 }
 
@@ -54,4 +67,12 @@ h2.modal-title {
 
 #intro {
   display: none;
+}
+
+/*Media Query*/
+
+@media only screen and (max-width: 200px) {
+  body {
+    background: lightgrey;
+  }
 }
