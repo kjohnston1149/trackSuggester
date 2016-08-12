@@ -3,11 +3,22 @@ $(document).ready(function() {
     event.preventDefault();
 
     var nameInput = $("input#name").val();
+    var introCurrent = parseInt($("#introQues").val());
+
+    $(".name").text(nameInput);
 
     if (nameInput === "") {
       $(".error").show();
-    } else {
+      $("#cssDesign").hide();
+      $("#javaAndroid").hide();
+      $("#rubyRails").hide();
+      $("#intro").hide();
+    } else if (introCurrent === 2){
+      $("#intro").show();
       $(".error").hide();
+      $("#cssDesign").hide();
+      $("#javaAndroid").hide();
+      $("#rubyRails").hide();
     };
   });
 
