@@ -8,12 +8,17 @@ img {
 }
 
 label {
-  margin-top: 30px;
-  font-size: 1.1em
+  margin-top: 15px;
+  font-size: 1.05em
 }
 
 button {
   margin: 15px;
+}
+
+h2.modal-title {
+  text-align: center;
+  font-weight: bold;
 }
 
 .container{
@@ -27,6 +32,10 @@ button {
 
 .jumbotron {
   text-align: center;
+  background-image: url(../img/roadFork.jpg);
+  background-size: auto;
+  text-decoration-color: white;
+
 }
 
 
