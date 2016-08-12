@@ -11,7 +11,7 @@ $(document).ready(function() {
     $(".name").text(nameInput);
 
     if ($("input:radio[name=appealing]:checked").val() === "css") {
-      cssDesign += 1
+      cssDesign += 2
     } else if ($("input:radio[name=appealing]:checked").val() === "java") {
       javaAndroid += 1
     } else if ($("input:radio[name=appealing]:checked").val() === "ruby") {
@@ -20,9 +20,23 @@ $(document).ready(function() {
 
     if ($("input:radio[name=aspectImport]:checked").val() === "css") {
       cssDesign += 1
+      javaAndroid -= 1
+      rubyRails -= 1
     } else if ($("input:radio[name=aspectImport]:checked").val() === "java") {
       javaAndroid += 1
     } else {
+      rubyRails += 1
+      javaAndroid -= 1
+      cssDesign -= 1
+    };
+
+    if ($("input:radio[name=company]:checked").val() === "css") {
+      cssDesign += 1
+    } else if ($("input:radio[name=company]:checked").val() === "java") {
+      javaAndroid += 2
+      cssDesign -= 1
+      rubyRails -= 1
+    } else if ($("input:radio[name=company]:checked").val() === "ruby") {
       rubyRails += 1
     };
 
