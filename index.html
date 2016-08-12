@@ -16,7 +16,7 @@
           <!-- Name Input -->
           <div class="form-group">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <label for="name">Enter your name</label>
                 <input id="name" class="form-control" type="text">
                 <p><span class="error">Please enter your name before submitting.</span></p>
@@ -26,7 +26,7 @@
           <!-- Intro Question -->
           <div class="form-group">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <label for="form-control">Have you completed or are you currently in Intro to Programming?</label>
                 <select class="form-control" id="introQues">
                   <option value="1">Yes</option>
@@ -35,26 +35,50 @@
               </div>
             </div>
           </div>
-          <label for="radio">What do you personally consider the most important aspect of any website?</label>
+          <!-- Important Aspect Question -->
           <div id="importantAspect">
-            <div class="radio">
-              <label>
-                <input type="radio" name="aspectImport" value="css" checked>
-                A well-designed, easy to use UI.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="aspectImport" value="java">
-                The ability to format on mobile devices.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="aspectImport" value="ruby">
-                Interactive web applications.
-              </label>
-            </div>
+            <label for="radio">What do you personally consider the most important aspect of any website?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="aspectImport" value="css" checked>
+                  A well-designed, easy to use UI.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="aspectImport" value="java">
+                  The ability to format on mobile devices.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="aspectImport" value="ruby">
+                  Interactive web applications.
+                </label>
+              </div>
+          </div>
+
+          <div id="appealingWork">
+            <label for="radio">You get assigned to a project! Which task sounds most appealing to you?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="appealing" value="css" checked>
+                  Improving the visual design of the website.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="appealing" value="java">
+                  Allowing the website to function as a mobile app.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="appealing" value="ruby">
+                  Improving the interactive features of the website.
+                </label>
+              </div>
+          </div>
 
           <!-- Submit button  -->
           <button type="submit" class="btn btn-success">Go!</button>
@@ -69,7 +93,7 @@
           <p>java test<p/>
         </div>
         <div id="rubyRails">
-          <p>css test<p/>
+          <p>ruby test<p/>
         </div>
         <div id="intro">
           <h1>Hey <span class="name"></span>! You need to take Intro to Program before you can move onto any track!</h1>

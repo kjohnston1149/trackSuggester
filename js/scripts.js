@@ -10,6 +10,14 @@ $(document).ready(function() {
 
     $(".name").text(nameInput);
 
+    if ($("input:radio[name=appealing]:checked").val() === "css") {
+      cssDesign += 1
+    } else if ($("input:radio[name=appealing]:checked").val() === "java") {
+      javaAndroid += 1
+    } else if ($("input:radio[name=appealing]:checked").val() === "ruby") {
+      rubyRails += 1
+    };
+
     if ($("input:radio[name=aspectImport]:checked").val() === "css") {
       cssDesign += 1
     } else if ($("input:radio[name=aspectImport]:checked").val() === "java") {
@@ -30,13 +38,13 @@ $(document).ready(function() {
       $("#cssDesign").hide();
       $("#javaAndroid").hide();
       $("#rubyRails").hide();
-    } else if (cssDesign > javaAndroid && cssDesign > rubyRails) {
+    } else if (cssDesign >= javaAndroid && cssDesign >= rubyRails) {
       $("#cssDesign").show();
       $("#javaAndroid").hide();
       $("#rubyRails").hide();
       $("#intro").hide();
       $(".error").hide();
-    } else if (rubyRails > javaAndroid && rubyRails > cssDesign) {
+    } else if (rubyRails >= javaAndroid && rubyRails >= cssDesign) {
       $("#rubyRails").show();
       $("#javaAndroid").hide();
       $("#cssDesign").hide();
