@@ -145,38 +145,44 @@
               </div>
           </div>
           <!-- Submit button  -->
-          <button type="submit" class="btn btn-success">Go!</button>
+          <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#myModal">Go!</button>
         </form>
       </div>
-<!-- Results -->
-      <div class="results">
-        <div id="cssDesign">
-          <h2><span class="name"></span>, you should take the CSS/Design track!</h2>
-          <img src="img/cssDesignTrack.png" alt="CSS Design course">
-          <h4>CSS course description:</h4>
-          <p>course description goes here</p>
-          <h4>Design course description</h4>
-          <p>course description goes here</p>
+      <!-- Results -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" id="cssDesign">
+              <h2 class="modal-header"><span class="name"></span>, you should take the CSS/Design track!</h2>
+                <button type="button" class="close" data-dismiss="modal">Close</button>
+              <img src="img/cssDesignTrack.png" alt="CSS Design course">
+              <h4>CSS course description:</h4>
+              <p>course description goes here</p>
+              <h4>Design course description</h4>
+              <p>course description goes here</p>
+            </div>
+            <div id="javaAndroid">
+              <h2><span class="name"></span>, you should take the Java/Android track!</h2>
+              <img src="img/javaAndroidTrack.png" alt="Java Android course">
+              <h4>Java course description:</h4>
+              <p>course description goes here</p>
+              <h4>Android course description</h4>
+              <p>course description goes here</p>
+            </div>
+            <div id="rubyRails">
+              <h2><span class="name"></span>, you should take the Ruby/Rails track!</h2>
+              <img src="img/rubyRailsTrack.png" alt="Ruby Rails course">
+              <h4>Ruby course description:</h4>
+              <p>course description goes here</p>
+              <h4>Rails course description</h4>
+              <p>course description goes here</p>
+            </div>
+            <div id="intro">
+              <h2>Hey <span class="name"></span>! You need to take Intro to Program before you can choose any track!</h2>
         </div>
-        <div id="javaAndroid">
-          <h2><span class="name"></span>, you should take the Java/Android track!</h2>
-          <img src="img/javaAndroidTrack.png" alt="Java Android course">
-          <h4>Java course description:</h4>
-          <p>course description goes here</p>
-          <h4>Android course description</h4>
-          <p>course description goes here</p>
         </div>
-        <div id="rubyRails">
-          <h2><span class="name"></span>, you should take the Ruby/Rails track!</h2>
-          <img src="img/rubyRailsTrack.png" alt="Ruby Rails course">
-          <h4>Ruby course description:</h4>
-          <p>course description goes here</p>
-          <h4>Rails course description</h4>
-          <p>course description goes here</p>
-        </div>
-        <div id="intro">
-          <h2>Hey <span class="name"></span>! You need to take Intro to Program before you can choose any track!</h2>
-        </div>
+      </div>
+
+
       </div>
     </div>
 
