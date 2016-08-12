@@ -13,6 +13,7 @@
       <h1 class="jumbotron">What Epicodus programming track is right for you?</h1>
       <div id="blanks">
         <form>
+          <!-- Name Input -->
           <div class="form-group">
             <div class="row">
               <div class="col-md-6">
@@ -22,6 +23,7 @@
               </div>
             </div>
           </div>
+          <!-- Intro Question -->
           <div class="form-group">
             <div class="row">
               <div class="col-md-6">
@@ -33,6 +35,28 @@
               </div>
             </div>
           </div>
+          <label for="radio">What do you personally consider the most important aspect of any website?</label>
+          <div id="importantAspect">
+            <div class="radio">
+              <label>
+                <input type="radio" name="aspectImport" value="css" checked>
+                A well-designed, easy to use UI.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="aspectImport" value="java">
+                The ability to format on mobile devices.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="aspectImport" value="ruby">
+                Interactive web applications.
+              </label>
+            </div>
+
+          <!-- Submit button  -->
           <button type="submit" class="btn btn-success">Go!</button>
         </form>
       </div>
