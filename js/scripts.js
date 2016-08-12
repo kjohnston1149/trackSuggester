@@ -53,7 +53,7 @@ $(document).ready(function() {
       cssDesign += 1
     } else if ($("input:radio[name=timeExtra]:checked").val() === "java") {
       javaAndroid += 2
-    } else {
+    } else if ($("input:radio[name=timeExtra]:checked").val() === "ruby") {
       rubyRails += 1
     };
 
