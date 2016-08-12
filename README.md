@@ -18,7 +18,7 @@ _This project contains the compressed files for bootstrap and jQuery.  Be sure t
 
 ## Known Bugs
 
-_At this time, there are no known bugs._
+_When no value is inputed into the 'Enter your name' form, the error message displays like it should, but the screen darkens like it is displaying a modal, although no modal is displayed.  Clicking the screen returns the display to it's normal settings.  This does not appear to affect the functionality of the program._
 
 ##Technologies Used
 
