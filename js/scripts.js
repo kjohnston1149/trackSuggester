@@ -36,10 +36,19 @@ $(document).ready(function() {
       javaAndroid += 2
       cssDesign -= 1
       rubyRails -= 1
-    } else if ($("input:radio[name=company]:checked").val() === "ruby") {
+    } else {
       rubyRails += 1
     };
 
+    if ($("input:radio[name=aspectImport]:checked").val() === "java") {
+      cssDesign += 1
+      javaAndroid += 1
+    } else {
+      rubyRails +=2
+      cssDesign += 1
+      javaAndroid -=1
+    };
+    
     if (nameInput === "") {
       $(".error").show();
       $("#cssDesign").hide();
