@@ -56,6 +56,11 @@ $(document).ready(function() {
     } else if ($("input:radio[name=timeExtra]:checked").val() === "ruby") {
       rubyRails += 1
     };
+    console.log("ruby",rubyRails);
+    console.log(javaAndroid);
+    console.log(cssDesign);
+
+
 
     if (nameInput === "") {
       $(".error").show();
@@ -69,13 +74,13 @@ $(document).ready(function() {
       $("#cssDesign").hide();
       $("#javaAndroid").hide();
       $("#rubyRails").hide();
-    } else if (cssDesign >= javaAndroid && cssDesign >= rubyRails) {
+    } else if (cssDesign > javaAndroid && cssDesign > rubyRails) {
       $("#cssDesign").show();
       $("#javaAndroid").hide();
       $("#rubyRails").hide();
       $("#intro").hide();
       $(".error").hide();
-    } else if (rubyRails >= javaAndroid && rubyRails >= cssDesign) {
+    } else if (rubyRails > javaAndroid && rubyRails > cssDesign) {
       $("#rubyRails").show();
       $("#javaAndroid").hide();
       $("#cssDesign").hide();
