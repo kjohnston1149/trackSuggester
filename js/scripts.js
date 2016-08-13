@@ -56,12 +56,7 @@ $(document).ready(function() {
     } else if ($("input:radio[name=timeExtra]:checked").val() === "ruby") {
       rubyRails += 1
     };
-    console.log("ruby",rubyRails);
-    console.log(javaAndroid);
-    console.log(cssDesign);
-
-
-
+    
     if (nameInput === "") {
       $(".error").show();
       $("#cssDesign").hide();
