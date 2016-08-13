@@ -1,6 +1,6 @@
 # _Epicodus Track Suggester_
 
-#### _An interactive survey to determine what programming language track a student should pursue at Epicodus, August 10 2016._
+#### _An interactive survey to determine what programming language track a student should pursue at Epicodus, August 12 2016._
 
 #### By _**Kevin Johnston**_
 
